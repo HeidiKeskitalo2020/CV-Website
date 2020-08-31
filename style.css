@@ -1,4 +1,13 @@
 h1 {
     color: black;
+    background-color: grey;
   }
-  
+h2 {
+    color: rgb(53, 52, 52);
+}
+  * {
+    background-color: grey;
+  }
+  * {
+    color: darkgrey;
+  }
