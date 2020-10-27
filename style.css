@@ -58,7 +58,7 @@ h3 { color: rgb(250, 246, 246);
 }
  
 * {
-    color: rgb(100, 98, 98);
+    color: black;
 }
   
 .foto {
@@ -69,7 +69,7 @@ h3 { color: rgb(250, 246, 246);
   
 }
 
-#red-part {color: red;}
+#red-part {color:  rgb(226, 86, 161)}
 
 
  
