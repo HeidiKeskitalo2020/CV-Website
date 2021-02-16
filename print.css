@@ -1,0 +1,73 @@
+/* override styles when printing */
+@media print { 
+
+
+  body { 
+    margin: 0; 
+    font-family: times;
+    font-size: 12 pt; 
+    text-align: center; 
+    color: black; 
+    background-color: white;  
+  }
+  
+  header h1 { 
+    margin: 0; 
+    font-family: times; 
+    font-size: 12pt; 
+    text-align: center;
+    color: black; 
+    background-color: white; 
+  }
+  
+  header h2 { 
+    margin: 0; 
+    font-family: times; 
+    font-size: 12pt; 
+    text-align: center;
+    color: black; 
+    background-color: white; 
+  }
+  
+  p { 
+    margin: 0; 
+    font-family: times; 
+    font-size: 12pt;
+    text-align: center; 
+    color: black; 
+    background-color: white; 
+  }
+  
+  a { 
+    margin: 0; 
+    font-family: times; 
+    font-size: 12pt; 
+    color: black; 
+    background-color: white; 
+    text-decoration: none;
+  }
+  
+  header h3 {
+    border: none;
+    margin:0;
+    font-family: times;
+    text-align: center;
+    color: black;
+    font-size: 12pt;
+    background-color: white; 
+  }
+  
+  ul {
+    margin: 0; 
+    font-family: times; 
+    font-size: 12pt; 
+    text-align: left;
+    color: black; 
+    background-color: white;
+  }
+  
+  img {
+  display: none;
+  }
+    
+  }
