@@ -76,5 +76,8 @@
     display: none;
   } @media print { /* visible when printed */ .print { display: block; font-family: time; } 
   }
+  .red {
+    font-size: 20px;
+  }
   
   }
