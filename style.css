@@ -7,7 +7,7 @@
       font-family: Arial;
   }
   tr:nth-child(even) {
-    background-color: rgb(255, 229, 255);
+    background-color: rgb(230, 231, 229);
     font-family: Arial;
   }
   ul, li {
@@ -57,12 +57,12 @@
   }
   
   h3 {
-      border: medium dotted #ffa6d0;
+      border: medium dotted rgb(230, 231, 229);
       margin: 6px;
       padding: 6px;
       font-family: Mistral;
       text-align: center;
-      color: #ff32d0;
+      color: rgb(226, 32, 161);
       font-size: 50px;
       width: 100%;
   }
