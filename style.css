@@ -23,7 +23,7 @@ body {
   background-color: black;
 
 }
-.topnav a:hover {
+.topnav a:hover:not(.active) {
   /overflow: hidden;
   background-color: 192,192,192,0.2;
   color: white;
