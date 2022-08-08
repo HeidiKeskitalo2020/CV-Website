@@ -20,7 +20,7 @@ body {
   /* Style the top navigation bar */
 .topnav {
   overflow: hidden;
-  background-color: red;
+  background-color: black;
 }
 .topnav a:hover {
   overflow: hidden;
