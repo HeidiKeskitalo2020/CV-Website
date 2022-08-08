@@ -17,10 +17,15 @@ body {
   text-align: center;
   background: white;
 }
+  /* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: red;
+}
 .topnav a:hover {
   overflow: hidden;
-  background-color: #ddd;
-  color: black;
+  background-color: black;
+  color: white;
 }
 
 /* Style the topnav links */
