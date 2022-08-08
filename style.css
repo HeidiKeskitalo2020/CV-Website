@@ -40,11 +40,11 @@
   background-color: rgb(230, 231, 229);
 }
   a:link {
-      color: #ff62d0;
+      color: rgb(230, 10, 229, 0.2);
       font-weight: bold;
   }
   a:visited {
-      color: #ffa6d0;
+      color: rgb(230, 10, 229, 0.2);
       font-weight: bold;
   }
   a:active {
