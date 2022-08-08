@@ -11,7 +11,6 @@
     background-color: rgb(230, 231, 229);
     font-family: Arial;
   }
-  .menu {
   ul  {
   list-style-type: none;
   margin: 0;
@@ -39,7 +38,6 @@
 }
   .active {
   background-color: rgb(230, 231, 229);
-}
   }
   a:link {
       color: rgb(230, 10, 229, 0.2);
