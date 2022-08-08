@@ -20,12 +20,12 @@ body {
   /* Style the top navigation bar */
 .topnav {
   overflow: hidden;
-  background-color: black;
+  background-color: rgb(226, 32, 161);
 
 }
 .topnav a:hover:not(.active) {
   /overflow: hidden;
-  background-color: 192,192,192,0.2;
+  background-color: black;
   color: white;
 }
 
@@ -40,9 +40,10 @@ body {
 }
 
 /* Change color on hover */
-/.topnav a:hover {
+/.topnav a:hover:not(.active) {
  / background-color: #ddd;
   /color: black;
+  
 .header h1 {
   font-size: 50px;
 }
