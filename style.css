@@ -16,7 +16,7 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: rgb(230, 231, 229);
   position: fixed;
   top: 0;
   width: 100%;
@@ -33,7 +33,7 @@
   text-decoration: none;
 }
   li a:hover:not(.active) {
-  background-color: #111;
+  background-color: white;
 }
   
   a:link {
