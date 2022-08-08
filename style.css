@@ -16,7 +16,7 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: rgb(226, 32, 161);;
+  background-color: rgb(226, 32, 161);
   position: fixed;
   top: 0;
   width: 100%;
@@ -51,7 +51,7 @@
       color: blue;
   }
   a:hover {
-      color: red;
+      color: rgb(230, 10, 229, 0.2);
       font-weight: bold;
   }
   body {
