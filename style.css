@@ -25,7 +25,7 @@ body {
 }
 .topnav a:hover:not(.active) {
   /overflow: hidden;
-  background-color: black;
+  background-color: grey;
   color: white;
 }
 
@@ -41,7 +41,7 @@ body {
 
 /* Change color on hover */
 /.topnav a:hover:not(.active) {
- / background-color: #ddd;
+ / background-color: grey;
   /color: black;
   
 .header h1 {
