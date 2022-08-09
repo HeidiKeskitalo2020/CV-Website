@@ -76,7 +76,7 @@ body {
   z-index: 1;
 }
 
-  /*
+  
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
@@ -89,8 +89,8 @@ body {
 
 .dropdown:hover .dropdown-content {
   display: block;
-  */
-  /*
+  
+  
 /* Change color on hover */
 /.topnav a:hover:not(.active) {
  / background-color: grey;
