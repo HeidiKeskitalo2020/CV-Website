@@ -52,7 +52,7 @@ body {
   text-decoration: none;
 }
   
-  .dropdown:hover .dropbtn {
+ a:hoover, .dropdown:hover .dropbtn {
   background-color: red;
 }
   
