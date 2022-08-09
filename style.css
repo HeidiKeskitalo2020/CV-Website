@@ -181,6 +181,7 @@ li.dropdown {
   display: block;
 }
   /*toinen UL LISTA*/
+  /*
   ul  {
   list-style-type: none;
   margin: 0;
@@ -206,6 +207,7 @@ li.dropdown {
   li a:hover:not(.active) {
   background-color: #111;
 }
+  */
   
   .active {
   background-color: rgb(230, 231, 229);
