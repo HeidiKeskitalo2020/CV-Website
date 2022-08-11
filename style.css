@@ -272,6 +272,10 @@ color: rgb(226, 32, 161);}
   text-align: center;
   background: #ddd;
   margin-top: 20px;
+  display: inline-block;
+  text-align: center;
+  width: 100%;	
+	
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
