@@ -232,8 +232,9 @@ color: rgb(226, 32, 161);}
   }
   
   .foto {
-      margin-top: 0px;
-      margin-left: 100px;
+       display: block;
+      margin-left: auto;
+      margin-right: auto;
 			
   }
   
