@@ -303,5 +303,37 @@ color: rgb(226, 32, 161);}
     width: 100%;
   }
 }
+/*kuvagalleria*/
+div.gallery {
+  border: 1px solid #ccc;
+}
 
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 }
