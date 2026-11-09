@@ -1,0 +1,116 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My CV</title>
+<link rel="icon" type="image/x-icon" href="kuvat/Favicon.png">
+<link href="style.css" media="screen" rel="stylesheet" type="text/css">
+<link href="print.css" media="print" rel="stylesheet" type="text/css">
+</head>
+<body>
+<a name="alkuun"></a>
+
+<div class="header">
+  <h1>Self-employed at Risako Queen</h1>
+</div>
+
+<ul>
+  <li><a href="index.htm">Back to Front Page</a></li>
+</ul>
+
+<div class="fullcolumn">
+  <div class="card">
+
+    <!-- PÄÄKUVA: lataa kuva kuvat-kansioon nimellä RisakoQueen1.jpg (tai vaihda nimi tähän) -->
+    <div><img src="kuvat/RisakoQueen1.jpg" alt="Risako Queen" align="left" height="280" hspace="10" vspace="10"></div>
+    <br>
+    <br>
+    <br>
+
+    <h2>Risako Queen 2025–present</h2>
+    <p>
+      Since 2025, I have continued my work with colors, style and wellbeing
+      under the name Risako Queen as a self-employed professional, using
+      Risako's original social media accounts.
+    </p>
+
+    <h3>Color and style analyses</h3>
+    <p>
+      I offer personal color and style analyses that help clients find the
+      colors and styles that suit them best.
+    </p>
+
+    <h3>Courses</h3>
+    <p>
+      I teach courses on colors and style, sharing practical knowledge that
+      participants can use in their everyday lives.
+    </p>
+
+    <h3>Reiki</h3>
+    <p>
+      In spring 2025, I trained as a Reiki practitioner, and I now also offer
+      Reiki treatments.
+    </p>
+
+    <br><br>
+    <p><strong>Follow Risako Queen on social media:</strong></p>
+    <p>
+      <a href="https://www.instagram.com/risako.fi" target="_blank"><img src="kuvat/IG-logo.png" alt="Instagram" style="height:50px;"></a>
+      <a href="https://www.facebook.com/risako.fi/" target="_blank"><img src="kuvat/FB-logo.png" alt="Facebook" style="height:50px;"></a>
+    </p>
+    <br>
+    <br>
+  </div>
+</div>
+
+<div class="fullcolumn">
+  <div class="card">
+    <h2>Gallery</h2>
+  </div>
+  <br>
+
+  <!-- GALLERIA: lisää kuvat kuvat-kansioon ja vaihda nimet alle.
+       Uuden kuvan saat kopioimalla yhden "responsive"-lohkon ja vaihtamalla kuvan nimen kahteen kohtaan. -->
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="kuvat/RisakoQueen2.jpg">
+        <img src="kuvat/RisakoQueen2.jpg" alt="Risako Queen" height="400">
+      </a>
+      <div class="desc"></div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="kuvat/RisakoQueen3.jpg">
+        <img src="kuvat/RisakoQueen3.jpg" alt="Risako Queen" height="400">
+      </a>
+      <div class="desc"></div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="kuvat/RisakoQueen4.jpg">
+        <img src="kuvat/RisakoQueen4.jpg" alt="Risako Queen" height="400">
+      </a>
+      <div class="desc"></div>
+    </div>
+  </div>
+  <br>
+</div>
+
+<div class="footer">
+  <p>
+    <a href="#alkuun" class="red">Back to top</a>
+    <a href="index.htm" class="red"><strong>Back to Front Page</strong></a>
+  </p>
+</div>
+
+<br>
+<br>
+<p class="print">Thank you for printing out my Risako Queen history!</p>
+</body>
+</html>
