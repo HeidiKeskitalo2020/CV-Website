@@ -22,7 +22,7 @@
 <div class="fullcolumn">
   <div class="card">
 
-    <!-- PÄÄKUVA: lataa kuva kuvat-kansioon nimellä RisakoQueen1.jpg (tai vaihda nimi tähän) -->
+    <!-- PÄÄKUVA: lataa kuva kuvat-kansioon nimellä RisakoQueen1.jpg 
     <div><img src="kuvat/RisakoQueen1.jpg" alt="Risako Queen" align="left" height="280" hspace="10" vspace="10"></div>
     <br>
     <br>
