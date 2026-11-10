@@ -8,17 +8,48 @@
 <link href="style.css" media="screen" rel="stylesheet" type="text/css">
 <link href="print.css" media="print" rel="stylesheet" type="text/css">
 <style>
-  /* Harmaa tausta osioiden ympärille, jotta valkoiset ruudut erottuvat kuten Training-sivulla */
+  /* Harmaa tausta laatikoiden ympärille, jotta valkoiset laatikot erottuvat kuten Training-sivulla */
   .sections {
     background-color: #f1f1f1;
-    padding: 1px 20px 20px 20px;
+    padding: 0 20px 20px 20px;
     margin-top: 20px;
   }
+  /* Kaksi laatikkoa rinnakkain, samankorkuisina */
+  .box-row {
+    display: flex;
+    gap: 20px;
+  }
+  .box-row .card {
+    flex: 1;
+    min-width: 0;
+  }
+  /* Laatikon yläosan kuva */
+  .box-img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  /* Yläosan isompi kuva, teksti asettuu sen viereen kapeammalle alalle */
+  .top-img {
+    float: left;
+    width: 55%;
+    height: auto;
+    margin: 0 20px 10px 0;
+  }
+  .top-card:after { content: ""; display: table; clear: both; }
   .sections .card p { text-align: left; }
   .sections .card h2 { color: rgb(226, 32, 161); }
   .subtitle { font-weight: bold; margin-top: 24px; }
-  .principles p { text-align: center; margin: 4px 0; }
+  .principles p { text-align: center !important; margin: 4px 0; }
   .quote { font-style: italic; }
+  .feedback p { text-align: center !important; margin: 14px 0; }
+  /* Kapealla näytöllä (puhelin) laatikot ja yläosan kuva allekkain */
+  @media screen and (max-width: 800px) {
+    .box-row { flex-direction: column; gap: 0; }
+    .top-img { float: none; width: 100%; margin: 0 0 10px 0; }
+  }
 </style>
 </head>
 <body>
@@ -34,12 +65,8 @@
 
 <!-- ALKU: pidetään ennallaan -->
 <div class="fullcolumn">
-  <div class="card">
-    <!-- PÄÄKUVA: lataa kuva kuvat-kansioon nimellä RisakoQueen1.jpg (tai vaihda nimi tähän) -->
-    <div><img src="kuvat/RisakoQueen1.jpg" alt="Risako Queen" align="left" height="280" hspace="10" vspace="10"></div>
-    <br>
-    <br>
-    <br>
+  <div class="card top-card">
+    <img src="kuvat/RisakoQueen1.jpg" alt="Risako Queen" class="top-img">
     <h2>Risako Queen 2025–present</h2>
     <p>
       Since 2025, I have continued my work with colors, style and wellbeing
@@ -59,142 +86,137 @@
 
 <div class="sections">
 
-  <!-- VÄRI- JA TYYLIANALYYSI -->
-  <div class="card">
-    <h2>Color and Style Analysis</h2>
+  <!-- RIVI 1: VÄRIANALYYSI JA TYYLIANALYYSI -->
+  <div class="box-row">
 
-    <p class="subtitle">Color analysis</p>
-    <p>
-      Color analysis is for anyone who wants to find their own best colors.
-      Based on your natural coloring, we find out which seasonal color type you are.
-      The method I use is based on 12 color palettes, with three different palettes
-      for each season.
-    </p>
-    <p>
-      The right colors make your face glow and help you look younger and well-rested.
-      They also soften dark circles and fine lines. And when you know your best colors,
-      you save money, because you no longer make purchases you regret.
-    </p>
-    <p>
-      The analysis has two parts. In the first part, we identify the tones of your hair,
-      eyes and skin with the help of measuring tools and colored scarves. In the second part,
-      I teach you how to use your personal color palette: a tool that helps you choose
-      clothes, makeup, glasses and hair color, and combine colors so that your wardrobe
-      gets a clear structure.
-    </p>
+    <div class="card">
+      <!-- KUVA: lataa kuva kuvat-kansioon nimellä Varianalyysi.jpg. Siihen asti kuvapaikka on piilossa. -->
+      <img src="kuvat/Varianalyysi.jpg" alt="Color analysis" class="box-img" onerror="this.style.display='none'">
+      <h2>Color Analysis</h2>
+      <p>
+        Color analysis is for anyone who wants to find their own best colors.
+        Based on your natural coloring, we find out which seasonal color type you are.
+        The method I use is based on 12 color palettes, with three different palettes
+        for each season.
+      </p>
+      <p>
+        The right colors make your face glow and help you look younger and well-rested.
+        They also soften dark circles and fine lines. And when you know your best colors,
+        you save money, because you no longer make purchases you regret.
+      </p>
+      <p>
+        The analysis has two parts. In the first part, we identify the tones of your hair,
+        eyes and skin with the help of measuring tools and colored scarves. In the second part,
+        I teach you how to use your personal color palette: a tool that helps you choose
+        clothes, makeup, glasses and hair color, and combine colors so that your wardrobe
+        gets a clear structure.
+      </p>
+      <p><a href="https://risakoqueen.webnode.fi/yhteystiedot/" target="_blank" class="red"><strong>Book a color analysis</strong></a></p>
+    </div>
 
-    <p class="subtitle">Style analysis</p>
-    <p>
-      Style analysis focuses on your body's proportions just as they are. Every body is good
-      as it is, so we do not try to change it, but find the proportions and cuts of clothing
-      that suit it best. You learn to recognize the most balanced shapes for your body,
-      as well as your own inner lines, which determine the shapes of accessories and details
-      that suit you. You also learn how optical illusions can be used in clothing.
-    </p>
-    <p>
-      Together we also define your personal style and go through how to make your wardrobe
-      work even better as a whole. I also offer guidance on capsule wardrobes.
-    </p>
+    <div class="card">
+      <!-- KUVA: lataa kuva kuvat-kansioon nimellä Tyylianalyysi.jpg. Siihen asti kuvapaikka on piilossa. -->
+      <img src="kuvat/Tyylianalyysi.jpg" alt="Style analysis" class="box-img" onerror="this.style.display='none'">
+      <h2>Style Analysis</h2>
+      <p>
+        Style analysis focuses on your body's proportions just as they are. Every body is good
+        as it is, so we do not try to change it, but find the proportions and cuts of clothing
+        that suit it best. You learn to recognize the most balanced shapes for your body,
+        as well as your own inner lines, which determine the shapes of accessories and details
+        that suit you. You also learn how optical illusions can be used in clothing.
+      </p>
+      <p>
+        Together we also define your personal style and go through how to make your wardrobe
+        work even better as a whole. I also offer guidance on capsule wardrobes.
+      </p>
+      <p class="subtitle">For groups</p>
+      <p>
+        Color and style analyses are also available for groups, such as work communities,
+        hen parties and birthday celebrations.
+      </p>
+      <p><a href="https://risakoqueen.webnode.fi/yhteystiedot/" target="_blank" class="red"><strong>Book a style analysis</strong></a></p>
+    </div>
 
-    <p class="subtitle">For groups</p>
-    <p>
-      Color and style analyses are also available for groups, such as work communities,
-      hen parties and birthday celebrations.
-    </p>
-
-    <p><a href="https://risakoqueen.webnode.fi/yhteystiedot/" target="_blank" class="red"><strong>Book a color or style analysis</strong></a></p>
   </div>
 
-  <!-- KURSSIT: kuvaus lisätään myöhemmin.
-  <div class="card">
-    <h2>Courses</h2>
-    <p>Tähän kurssien kuvaus.</p>
-  </div>
-  -->
+  <!-- KURSSIT: kuvaus lisätään myöhemmin. Kurssilaatikon voi lisätä omaksi rivikseen samalla mallilla. -->
 
-  <!-- REIKI -->
-  <div class="card">
-    <h2>Reiki Treatments</h2>
-    <p>
-      Reiki is a Japanese method of healing and wellbeing in which energy is channeled
-      through the hands. The energy does not come from the practitioner, but flows through
-      them, so giving it does not drain the practitioner. Reiki is used all over the world,
-      and it is not tied to any religion or political view. It is based on giving and sharing.
-    </p>
-    <p>
-      A treatment takes place in a calm environment, while you sit or lie in a comfortable
-      position. I place my hands lightly on or just above the body, starting from the top of
-      the head and going through all the chakras. The deep relaxation experienced during the
-      treatment helps release stress, and many clients describe the treatment as being like
-      a restful daytime nap. Experiences are always individual.
-    </p>
-    <p>
-      Reiki is a complementary treatment and never replaces medical care or treatment
-      prescribed by a doctor.
-    </p>
-    <p>A treatment lasts 30–60 minutes, as you choose.</p>
-    <p><a href="https://risakoqueen.webnode.fi/yhteystiedot/" target="_blank" class="red"><strong>Book a Reiki treatment</strong></a></p>
-  </div>
+  <!-- RIVI 2: REIKI-HOIDOT JA REIKIPERIAATTEET -->
+  <div class="box-row">
 
-  <div class="card principles">
-    <h2>Reiki Principles</h2>
-    <p>Älä ole vihainen</p>
-    <p>Älä murehdi</p>
-    <p>Ole kiitollinen</p>
-    <p>Tee työsi</p>
-    <p>Olen ystävällinen muita ihmisiä kohtaan</p>
-    <br>
-    <p class="quote">Do not be angry</p>
-    <p class="quote">Do not worry</p>
-    <p class="quote">Be grateful</p>
-    <p class="quote">Do your work</p>
-    <p class="quote">Be kind to others</p>
+    <div class="card">
+      <img src="kuvat/RisakoQueen3.jpg" alt="Reiki treatment" class="box-img">
+      <h2>Reiki Treatments</h2>
+      <p>
+        Reiki is a Japanese method of healing and wellbeing in which energy is channeled
+        through the hands. The energy does not come from the practitioner, but flows through
+        them, so giving it does not drain the practitioner. Reiki is used all over the world,
+        and it is not tied to any religion or political view. It is based on giving and sharing.
+      </p>
+      <p>
+        A treatment takes place in a calm environment, while you sit or lie in a comfortable
+        position. I place my hands lightly on or just above the body, starting from the top of
+        the head and going through all the chakras. The deep relaxation experienced during the
+        treatment helps release stress, and many clients describe the treatment as being like
+        a restful daytime nap. Experiences are always individual.
+      </p>
+      <p>
+        Reiki is a complementary treatment and never replaces medical care or treatment
+        prescribed by a doctor.
+      </p>
+      <p>A treatment lasts 30–60 minutes, as you choose.</p>
+      <p><a href="https://risakoqueen.webnode.fi/yhteystiedot/" target="_blank" class="red"><strong>Book a Reiki treatment</strong></a></p>
+    </div>
+
+    <div class="card principles">
+      <img src="kuvat/RisakoQueen2.jpg" alt="Reiki in session" class="box-img">
+      <h2>Reiki Principles</h2>
+      <p>Älä ole vihainen</p>
+      <p>Älä murehdi</p>
+      <p>Ole kiitollinen</p>
+      <p>Tee työsi</p>
+      <p>Olen ystävällinen muita ihmisiä kohtaan</p>
+      <br>
+      <p class="quote">Do not be angry</p>
+      <p class="quote">Do not worry</p>
+      <p class="quote">Be grateful</p>
+      <p class="quote">Do your work</p>
+      <p class="quote">Be kind to others</p>
+      <br>
+      <img src="kuvat/reiki-hoito.webp" alt="Reiki treatment" class="box-img">
+    </div>
+
   </div>
 </div>
 
-<!-- GALLERIA -->
-<div class="fullcolumn">
-  <div class="card">
-    <h2>Gallery</h2>
-  </div>
-  <br>
+<!-- ASIAKASPALAUTTEET -->
+<div class="sections">
+  <div class="box-row">
 
-  <!-- Lisää kuvat kuvat-kansioon ja vaihda nimet alle.
-       Uuden kuvan saat kopioimalla yhden "responsive"-lohkon ja vaihtamalla kuvan nimen kahteen kohtaan. -->
-
-  <div class="responsive">
-    <div class="gallery">
-      <a target="_blank" href="kuvat/RisakoQueen2.jpg">
-        <img src="kuvat/RisakoQueen2.jpg" alt="Risako Queen" height="400">
-      </a>
-      <div class="desc"></div>
+    <div class="card feedback">
+      <h2>Client Feedback: Colors and Style</h2>
+      <p class="quote">"I would never have believed that blue could suit me! Now I have to go and find blue in just the right shade."</p>
+      <p class="quote">"Since my color analysis, even complete strangers have come to compliment my colors!"</p>
+      <p class="quote">"I had always thought my hips were wide, but now I have to believe that my shoulders are actually wider!"</p>
+      <p class="quote">"In the style analysis, I became confident that I don't have to give up my own style as I get older. Fashion comes and goes, but my style stays."</p>
     </div>
-  </div>
 
-  <div class="responsive">
-    <div class="gallery">
-      <a target="_blank" href="kuvat/RisakoQueen3.jpg">
-        <img src="kuvat/RisakoQueen3.jpg" alt="Risako Queen" height="400">
-      </a>
-      <div class="desc"></div>
+    <div class="card feedback">
+      <h2>Client Feedback: Reiki</h2>
+      <p class="quote">"I could have fallen asleep. It was so relaxing."</p>
+      <p class="quote">"I don't know what happened, but in my mind I traveled somewhere very far away. It felt good and bright."</p>
+      <p class="quote">"I really felt myself relax. What could be more important than taking care of yourself?"</p>
+      <p class="quote">"This cannot be described in words; you have to experience it yourself. How can Heidi's hands be in several places on my body at the same time!"</p>
     </div>
-  </div>
 
-  <div class="responsive">
-    <div class="gallery">
-      <a target="_blank" href="kuvat/reiki-hoito.webp">
-        <img src="kuvat/reiki-hoito.webp" alt="Risako Queen" height="400">
-      </a>
-      <div class="desc"></div>
-    </div>
   </div>
-  <br>
 </div>
 
 <div class="footer">
- <p><li class="footer">
-  <p><a href="#alkuun" font-family="calibri" class="red">Back to top<a href="index.htm" font-family="calibri" class="red"><strons class="red">Back to Front Page</strons></a></p>
-</li>
+  <p>
+    <a href="#alkuun" class="red">Back to top</a>
+    <a href="index.htm" class="red"><strong>Back to Front Page</strong></a>
+  </p>
 </div>
 
 <br>
