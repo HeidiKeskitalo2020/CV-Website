@@ -172,8 +172,13 @@ color: rgb(226, 32, 161);}
 		font-weight:normal;
 	}
 */
-  .active {
-  background-color: rgb(230, 231, 229);
+ ul li a.active,
+  ul li a.active:link,
+  ul li a.active:visited,
+  ul li a.active:hover {
+    background-color: white;
+    color: rgb(226, 32, 161);
+    font-weight: bold;
   }
   a:link {
       color: rgb(226, 32, 161) /*blue*/;
