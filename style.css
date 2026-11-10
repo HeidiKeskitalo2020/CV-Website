@@ -61,7 +61,7 @@ body {
  ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 20px;
   overflow: hidden;
   background-color:  rgb(226, 32, 161);
 	/*Tämä saa sivun yläosan pysymään paikallaan, mutta menun alasveto katoaa*/
