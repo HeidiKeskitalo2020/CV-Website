@@ -186,23 +186,13 @@ color: rgb(226, 32, 161);}
       font-weight: normal;
   }
   
-  /*a:visited {
-      color: white/*rgb(230, 10, 229, 0.9)*/;
-      /*font-weight:normal;
-  }
-	*/
   a:active {
-      color: blue /* rgb(230, 10, 229, 0.2)*/;
+      color: blue;
   }
-  /*a:hover {
-      color: white /*rgb(230, 10, 229, 0.2) /*rgb(226, 32, 161)*/;
-      /*font-weight: bold;
-  }
-	*/
   body {
       margin: 0 auto;
       padding: 0em;
-      max-width: 50em;
+      max-width: 75em;
       color: #000000;
       background-color: rgb(253, 251, 251);
   }
