@@ -30,7 +30,7 @@ body {
 /*.topnav {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+   padding: 0 0 0 20px;
   overflow: hidden;
   background-color: rgb(226, 32, 161);
 
@@ -341,4 +341,9 @@ div.desc {
   display: table;
   clear: both;
 }
+css
+ ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
