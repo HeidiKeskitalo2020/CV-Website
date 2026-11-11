@@ -339,3 +339,16 @@ div.desc {
 html {
   background-color: #e6e6e6;
 }
+/* Yläosan otsikko ja pinkki valikkopalkki ulottuvat reunasta reunaan,
+   mutta niiden tekstit pysyvät samassa kohdassa kuin muu sisältö */
+html {
+  overflow-x: hidden;
+}
+body > .header,
+body > ul {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+body > ul {
+  padding-left: calc(50vw - 50% + 48px);
+}
